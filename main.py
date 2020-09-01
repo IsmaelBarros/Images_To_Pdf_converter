@@ -39,16 +39,16 @@ class Window1:
 
         # ==============================FRAMES======================================================
         self.frame1 = LabelFrame(self.frame, width=100, height=200, font=('arial', 20, 'bold'),
-                                 relief='ridge', bg='red', bd=5)
-        self.frame1.pack(fill='both', side='left')
+                                 relief='ridge', bg='light cyan', bd=5)
+        self.frame1.pack(fill='both', side='left', expand='True')
 
         self.frame2 = LabelFrame(self.frame, width=100, height=200, font=('arial', 10, 'bold'),
-                                 relief='ridge', bg='blue', bd=5)
-        self.frame2.pack(fill='both', side='right')
+                                 relief='ridge', bg='white smoke', bd=5)
+        self.frame2.pack(fill='both', side='right', expand='True')
 
         # =========================WIDGETS FRAME1===================================================
         self.lblImagemName = Label(
-            self.frame1, text='Escolha as imagens', font=('arial', 10, 'bold'), bg='red')
+            self.frame1, text='Escolha as imagens', font=('arial', 10, 'bold'), bg='light cyan')
         self.lblImagemName.grid(column=0, row=0, padx=10, pady=10)
         self.btnOpen = Button(
             self.frame1, text="Procurar imagens", command=self.open)
@@ -64,7 +64,7 @@ class Window1:
         # =========================WIDGETS FRAME 2==================================================
 
         self.lblPdfName = Label(
-            self.frame2, text='Digite um nome para o arquivo pdf', font=('arial', 10, 'bold'), bg='blue')
+            self.frame2, text='Digite um nome para o arquivo pdf', font=('arial', 10, 'bold'), bg='white smoke')
         self.lblPdfName.grid(column=0, row=0)
 
         self.txtPdfName = Entry(
